@@ -19,28 +19,13 @@ public class PizzaSlice : MonoBehaviour
        
     }
 
-    public IEnumerator moveForeward(GameObject pizza)
+    public void moveForeward(GameObject pizza)
     {
-        int i = 0;
-        while (i < 10)
-        {
-            // Count to Ten
-            i++;
-            pizza.transform.Translate(Vector2.right * speed * Time.deltaTime);
-            yield return null;
-        }
-        Destroy(pizza, delay);
-    }
+        pizza.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 1) * speed;
 
-
-    public void moveForeward1(GameObject pizza)
-    {
-       // pizza.GetComponent<Rigidbody2D>().AddForce(transform.up * speed * Time.deltaTime);
-        pizza.transform.Translate(Vector2.right * speed * Time.deltaTime);
-        pizza.transform.Translate(Vector2.right * speed * Time.deltaTime);
-        pizza.transform.Translate(Vector2.right * speed * Time.deltaTime);
-        pizza.transform.Translate(Vector2.right * speed * Time.deltaTime);
-        pizza.transform.Translate(Vector2.right * speed * Time.deltaTime);
+        // pizza.GetComponent<Rigidbody2D>().AddForce(transform.up * speed * Time.deltaTime);
+        
+       // pizza.transform.Translate(Vector2.right * speed * Time.deltaTime);
         Destroy(pizza, delay);
     }
 
