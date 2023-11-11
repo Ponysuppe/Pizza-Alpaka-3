@@ -178,9 +178,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3468146574746604915}
   - component: {fileID: 1207042978103846982}
+  - component: {fileID: -586698506836071297}
   m_Layer: 0
   m_Name: 'PizzaPlatz '
-  m_TagString: Untagged
+  m_TagString: PizzaPlate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -227,6 +228,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8302927, y: 1.3375083}
   m_EdgeRadius: 0
+--- !u!114 &-586698506836071297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3468146574746604914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 302945cae53a6c740895e5b82ed4da25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PizzaSlice: {fileID: 3242349690222751532, guid: 4450408831ca04043b9e3ac766efa8dd, type: 3}
 --- !u!1 &3468146575120029905
 GameObject:
   m_ObjectHideFlags: 0

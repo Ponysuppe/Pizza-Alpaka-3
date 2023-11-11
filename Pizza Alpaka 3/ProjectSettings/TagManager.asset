@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Hawaii
+  - Chicken
+  - PizzaPlate
   layers:
   - Default
   - TransparentFX
@@ -55,4 +58,7 @@ TagManager:
     locked: 0
   - name: Pizza
     uniqueID: 4187846221
+    locked: 0
+  - name: PizzaSort
+    uniqueID: 2466166347
     locked: 0

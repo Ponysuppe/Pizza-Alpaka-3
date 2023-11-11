@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject pizzaSlice;
     public GameObject pizzaPlate;
     bool pizzaEquipped = false;
-    bool pizzaInReach = false;
+    bool pizzaPlateTouched = false;
     GameObject pizza;
 
     private Vector2 moveDirection;
@@ -33,16 +33,14 @@ public class PlayerMovement : MonoBehaviour
 
         moveDirection = new Vector2(moveX, moveY).normalized;
 
-        
-        if (Input.GetKeyDown(KeyCode.E) && pizzaInReach && !pizzaEquipped)
-        {
-            Debug.Log("Is Touching");
-            pickupPizza();
-        }
-
         if(Input.GetKeyDown(KeyCode.Space) && pizzaEquipped)
         {
             throwPizza(pizza);
+        }
+        if (Input.GetKeyDown(KeyCode.E) && !pizzaEquipped && (pizzaPlate.CompareTag("PizzaPlate")) && pizzaPlateTouched)
+        {
+            Debug.Log("Is Touching2");
+            pickupPizza(pizzaPlate);
         }
     }
 
@@ -51,30 +49,32 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(moveDirection.x * movespeed, moveDirection.y * movespeed);
     }
 
-    void pickupPizza()
-    {
-        pizza = Instantiate(pizzaSlice, gameObject.transform, true);
-        pizza.transform.position = gameObject.transform.position + new Vector3(0,0.5f,0);
-      
+     void pickupPizza(GameObject pizzaPlate)
+    {   
+        Debug.Log("Is Picked");
+        pizza = Instantiate(pizzaPlate.GetComponent<PizzaPlate>().pickupPizza(), gameObject.transform, true);
+        pizza.transform.position = gameObject.transform.position + new Vector3(0, 0.5f, 0);
         pizzaEquipped = true;
     }
 
     void throwPizza(GameObject pizza)
     {
+        Debug.Log("Is Thrown");
         gameObject.transform.DetachChildren();
         pizzaSlice.GetComponent<PizzaSlice>().moveForeward(pizza);
-        //Destroy(pizza);
         pizzaEquipped = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        pizzaInReach = true;
+        pizzaPlate = collision.gameObject;
+        pizzaPlateTouched = true;
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        pizzaInReach = false;
+        pizzaPlateTouched = false;
     }
-  
+
 }
