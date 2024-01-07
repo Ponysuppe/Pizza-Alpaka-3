@@ -1,0 +1,465 @@
+fileFormatVersion: 2
+guid: 6b2b56159c4ba054fbb80bb1e1650b6d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1000
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pingu-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 1475
+        width: 455
+        height: 622
+      alignment: 9
+      pivot: {x: 0.54745317, y: 0.48080218}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b50092e30678b9b459f505a5ab838428
+      internalID: 1737317268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pingu-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 1928
+        width: 52
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1cc30e429564e4cb8923009b501fba
+      internalID: -429570698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pingu-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 1927
+        width: 48
+        height: 69
+      alignment: 9
+      pivot: {x: 0.6686681, y: 0.57822406}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae9d37d74ec2bfd478be5681a376ecce
+      internalID: 1237315983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pingu-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 1968
+        width: 51
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26a23ac9edc447b4c9ccb82a55e71928
+      internalID: -321356291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pingu-sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1970
+        width: 56
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b47c83f0ff1e746bb702afe9c03340
+      internalID: -505482141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pingu-sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 1859
+        width: 67
+        height: 85
+      alignment: 9
+      pivot: {x: 0.47986203, y: 0.67462087}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f391d9b12b85634ea51cb47093436db
+      internalID: -1474153216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pingu-sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1678
+        y: 1877
+        width: 68
+        height: 85
+      alignment: 9
+      pivot: {x: 0.48015818, y: 0.6904957}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c65884795c28d94b9431f058b1c13e8
+      internalID: 1552058529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pingu-sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 1239
+        width: 107
+        height: 306
+      alignment: 9
+      pivot: {x: 0.65108657, y: 0.92781734}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 546a095e8f7b37d408f22f19c2b36613
+      internalID: 1421636045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pingu-sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 1248
+        width: 126
+        height: 304
+      alignment: 9
+      pivot: {x: 0.31870657, y: 0.8822427}
+      border: {x: 1, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0286313353f336a47b703d23f5a81a82
+      internalID: 612712753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pingu-sheet_9
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1020
+        width: 98
+        height: 126
+      alignment: 9
+      pivot: {x: 0.8029131, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dec97b89f209b847865ad494f363337
+      internalID: 575613513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pingu-sheet_10
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 1111
+        width: 111
+        height: 106
+      alignment: 9
+      pivot: {x: 0.14746973, y: 0.14357081}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c3f018c340e2b48a177964e54d4128
+      internalID: 945746462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pingu-sheet_11
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 652
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2e8a000e05e4a4c8e5135bd99fc047
+      internalID: 1144891096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pingu-sheet_12
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 413
+        width: 119
+        height: 238
+      alignment: 9
+      pivot: {x: 0.28455922, y: 0.94222075}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52853d748963e5a4da183e93c7a708d7
+      internalID: 1186661524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pingu-sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 399
+        width: 123
+        height: 245
+      alignment: 9
+      pivot: {x: 0.20380384, y: 0.93509346}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f69865940fe2024fbcdbc5666e18ef8
+      internalID: -472321709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pingu-sheet_14
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 406
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfcc5b0975c380843b30698a24e70497
+      internalID: 426827966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      pingu-sheet_2: 2073073792
+      pingu-sheet_7: 1989005121
+      pingu-sheet_1: -1671652327
+      pingu-sheet_14: 95054306
+      pingu-sheet_9: 2079600881
+      pingu-sheet_12: 1113696738
+      pingu-sheet_8: 1238724413
+      pingu-sheet_3: -714288553
+      pingu-sheet_4: -586035389
+      pingu-sheet_5: -1314595556
+      pingu-sheet_10: 929324169
+      pingu-sheet_11: 211001924
+      pingu-sheet_13: -1673008853
+      pingu-sheet_6: -178956711
+      pingu-sheet_0: 54726955
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

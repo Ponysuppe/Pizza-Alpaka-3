@@ -12,7 +12,16 @@ public class PlayerMovement : MonoBehaviour
     bool pizzaPlateTouched = false;
     GameObject pizza;
 
+    private SpriteRenderer spriteRenderer;
+    private Animator anim;
+
     private Vector2 moveDirection;
+    
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -31,6 +40,32 @@ public class PlayerMovement : MonoBehaviour
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
 
+        if(moveX > 0)
+        {
+            transform.localScale = new Vector3(1,1,1);
+        }
+        else if(moveX < 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+        
+        if(moveX == 0 && moveY == 0)
+        {
+            anim.SetBool("isRunning", false);
+        }else
+        {
+            anim.SetBool("isRunning", true);
+        }
+
+        if (!pizzaEquipped)
+        {
+            anim.SetBool("isHolding", false);
+        }
+        else
+        {
+            anim.SetBool("isHolding", true);
+        }
+
         moveDirection = new Vector2(moveX, moveY).normalized;
 
         if(Input.GetKeyDown(KeyCode.Space) && pizzaEquipped)
@@ -41,6 +76,7 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.Log("Is Touching2");
             pickupPizza(pizzaPlate);
+            anim.SetTrigger("StartHolding");
         }
     }
 
@@ -60,7 +96,8 @@ public class PlayerMovement : MonoBehaviour
     void throwPizza(GameObject pizza)
     {
         Debug.Log("Is Thrown");
-        gameObject.transform.DetachChildren();
+        //gameObject.transform.DetachChildren();
+        pizza.GetComponent<Transform>().parent = null;
         pizzaSlice.GetComponent<PizzaSlice>().moveForeward(pizza);
         pizzaEquipped = false;
     }
