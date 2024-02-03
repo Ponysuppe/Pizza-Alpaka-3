@@ -48,23 +48,9 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.localScale = new Vector3(-1, 1, 1);
         }
-        
-        if(moveX == 0 && moveY == 0)
-        {
-            anim.SetBool("isRunning", false);
-        }else
-        {
-            anim.SetBool("isRunning", true);
-        }
 
-        if (!pizzaEquipped)
-        {
-            anim.SetBool("isHolding", false);
-        }
-        else
-        {
-            anim.SetBool("isHolding", true);
-        }
+        handleAnimation(moveX, moveY);
+        
 
         moveDirection = new Vector2(moveX, moveY).normalized;
 
@@ -98,8 +84,30 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log("Is Thrown");
         //gameObject.transform.DetachChildren();
         pizza.GetComponent<Transform>().parent = null;
-        pizzaSlice.GetComponent<PizzaSlice>().moveForeward(pizza);
+        //pizzaSlice.GetComponent<PizzaSlice>().moveForeward(pizza);
+        pizzaSlice.GetComponent<PizzaSlice>().throwPizza(pizza, moveDirection);
         pizzaEquipped = false;
+    }
+
+    public void handleAnimation(float moveX, float moveY)
+    {
+        if (moveX == 0 && moveY == 0)
+        {
+            anim.SetBool("isRunning", false);
+        }
+        else
+        {
+            anim.SetBool("isRunning", true);
+        }
+
+        if (!pizzaEquipped)
+        {
+            anim.SetBool("isHolding", false);
+        }
+        else
+        {
+            anim.SetBool("isHolding", true);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

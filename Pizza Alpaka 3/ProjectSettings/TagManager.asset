@@ -63,3 +63,9 @@ TagManager:
   - name: PizzaSort
     uniqueID: 2466166347
     locked: 0
+  - name: Enemy
+    uniqueID: 548958295
+    locked: 0
+  - name: Cursor
+    uniqueID: 38857835
+    locked: 0

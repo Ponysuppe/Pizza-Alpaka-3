@@ -148,3 +148,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: -81516445825359987}
   speed: 5
+  AllCounters: []
+  NearestCounter: {fileID: 0}
+  target: {fileID: 8512439161719804937, guid: 413edb40c5d6d15499f3f2ed2cc132d1, type: 3}

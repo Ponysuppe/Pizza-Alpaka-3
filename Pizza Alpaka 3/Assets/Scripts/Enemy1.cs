@@ -10,19 +10,44 @@ public class Enemy1 : MonoBehaviour
     public GameObject NearestCounter;
     float distance;
     float nearestDistance = 10000;
+    public GameObject target;
+    Vector2 targetPosition;
+
 
     // Start is called before the first frame update
     void Start()
-    {
-        AllCounters = GameObject.FindGameObjectsWithTag("Waiting Space");
-        findCounter();
+    { 
+        /*if (target == null) {
+
+		    if (GameObject.FindWithTag ("Player")!=null)*/
+		    //{
+			   // target = GameObject.FindWithTag("Player").GetComponent<Transform>();
+		   /* }
+	    }*/
+
+       
+    
     }
 
     // Update is called once per frame
     void Update()
     {
-        rb.velocity = new Vector2(0, -1) * speed;
+
+/*            if (target == null)
+                return;
         
+*/
+       
+       // targetPosition = new Vector2(target.position.x, target.position.y);
+       
+
+    }
+
+    private void LateUpdate()
+    {
+
+        var speedVar = speed * Time.deltaTime;
+          this.transform.position = Vector2.MoveTowards(this.transform.position, target.transform.position, speedVar);
     }
 
     void findCounter()

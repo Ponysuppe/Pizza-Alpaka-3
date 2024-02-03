@@ -29,4 +29,11 @@ public class PizzaSlice : MonoBehaviour
         Destroy(pizza, delay);
     }
 
+    public void throwPizza(GameObject pizza, Vector2 direction)
+    {
+        pizza.GetComponent<Rigidbody2D>().velocity = direction * speed;
+
+        Destroy(pizza, delay);
+    }
+
 }
