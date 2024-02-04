@@ -295,7 +295,7 @@ MonoBehaviour:
   speed: 1.57
   AllCounters: []
   NearestCounter: {fileID: 0}
-  target: {fileID: 8512439161719804937, guid: 413edb40c5d6d15499f3f2ed2cc132d1, type: 3}
+  target: {fileID: 0}
 --- !u!50 &6602001954826502303
 Rigidbody2D:
   serializedVersion: 4

@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e693e7919f16134ab753f2459165c21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 6645687751727797905, guid: e85cf8147e0321a4cadd3b9880c85057, type: 3}
+  enemy: {fileID: 7062525461583078281, guid: 5907140e6926ece43bfceb7490be80b7, type: 3}
   stopSpawning: 0
   spawnTime: 5
   spawnDelay: 5

@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
 
         moveDirection = new Vector2(moveX, moveY).normalized;
 
-        if(Input.GetKeyDown(KeyCode.Space) && pizzaEquipped)
+        if(Input.GetMouseButtonDown(0) && pizzaEquipped)
         {
             throwPizza(pizza);
         }
@@ -82,11 +82,19 @@ public class PlayerMovement : MonoBehaviour
     void throwPizza(GameObject pizza)
     {
         Debug.Log("Is Thrown");
-        //gameObject.transform.DetachChildren();
+        ////gameObject.transform.DetachChildren();
+        //pizza.GetComponent<Transform>().parent = null;
+        ////pizzaSlice.GetComponent<PizzaSlice>().moveForeward(pizza);
+        //pizzaSlice.GetComponent<PizzaSlice>().throwPizza(pizza, moveDirection);
+        //pizzaEquipped = false;
+
+        Vector3 worldMousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 direction = (Vector2)((worldMousePos - transform.position));
+        direction.Normalize();
         pizza.GetComponent<Transform>().parent = null;
-        //pizzaSlice.GetComponent<PizzaSlice>().moveForeward(pizza);
-        pizzaSlice.GetComponent<PizzaSlice>().throwPizza(pizza, moveDirection);
+        pizzaSlice.GetComponent<PizzaSlice>().throwPizza(pizza, direction);
         pizzaEquipped = false;
+
     }
 
     public void handleAnimation(float moveX, float moveY)

@@ -8,6 +8,7 @@ TagManager:
   - Chicken
   - PizzaPlate
   - Waiting Space
+  - Pizza
   layers:
   - Default
   - TransparentFX
